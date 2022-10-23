@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/output.css" rel="stylesheet" />
+    <title>Training</title>
+  </head>
+  <body class="bg-black text-white">
+    <section
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    >
+      <div class="flex flex-col items-center">
+        <img
+          src="./assets/yin-yang.svg"
+          class="w-36 h-36 self-center bg-white rounded-full mb-4 sm:mb-8 animate-spin"
+        />
+        <h2 class="text-xl text-center mb-4 sm:mb-12 sm:text-3xl">
+          New Year Countdown
+        </h2>
+        <div class="flex sm:flex-row flex-col items-center sm:gap-9 gap-6">
+          <label>
+            <h2 class="text-4xl text-center" id="dia">0</h2>
+            <p class="text-xl">Dias</p>
+          </label>
+          <label>
+            <h2 class="text-4xl text-center" id="hora">0</h2>
+            <p class="text-xl">Horas</p>
+          </label>
+          <label>
+            <h2 class="text-4xl text-center" id="minutos">00</h2>
+            <p class="text-xl">Minutos</p>
+          </label>
+          <label>
+            <h2 class="text-4xl text-center" id="segundos">00</h2>
+            <p class="text-xl">Segundos</p>
+          </label>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+</html>
