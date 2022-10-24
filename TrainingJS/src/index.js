@@ -21,7 +21,11 @@ const countdownNewYear = () => {
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
     dia.innerText = days;
-    hora.innerText = hours;
+    if (hora < 10) {
+      hora.innerText = "0" + hours;
+    } else {
+      hora.innerText = hours;
+    }
     minutos.innerText = minutes;
     segundos.innerText = seconds;
 
