@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <title>R</title>
+  </head>
+  <body class="bg-black text-white">
+    <section
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    >
+      <div class="flex justify-center items-center mb-4 gap-4">
+        <h1 class="text-6xl" id="minutos">30</h1>
+        <span class="text-6xl">:</span>
+        <h2 class="text-6xl" id="segundos">00</h2>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <img
+          src="./src/assets/+.svg"
+          class="cursor-pointer rounded-full hover:bg-violet-500 hover:opacity-60"
+          id="plus"
+        />
+        <img
+          src="./src/assets/play.svg"
+          class="w-14 h-14 cursor-pointer"
+          id="play"
+        />
+        <img
+          src="./src/assets/pause-circle.svg"
+          class="w-14 h-14 cursor-pointer hidden"
+          id="pause"
+        />
+        <img
+          src="./src/assets/stop.svg"
+          class="w-14 h-14 cursor-pointer"
+          id="resete"
+        />
+        <img
+          src="./src/assets/-.svg"
+          class="cursor-pointer rounded-full hover:bg-violet-500 hover:opacity-60"
+          id="decrease"
+        />
+      </div>
+    </section>
+    <img
+      src="./src/assets/volume-medium.svg"
+      class="w-14 h-14 cursor-pointer absolute top-[90%] right-[5%]"
+      id="unmuted"
+    />
+    <img
+      src="./src/assets/volume-mute.svg"
+      class="w-14 h-14 cursor-pointer absolute top-[90%] right-[5%] hidden"
+      id="muted"
+    />
+  </body>
+  <script src="./src/index.js"></script>
+</html>
