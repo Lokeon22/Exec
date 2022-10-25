@@ -8,23 +8,27 @@ import {
   decrease,
   unmuted,
   muted,
+  range,
 } from "./content.js";
 
 import { startClock, stopClock } from "./timer.js";
 
-export function buttonsClick() {
-  let beat = new Audio("./src/assets/witchersong.mp3");
+import { beat } from "./audios.js";
 
+export function buttonsClick() {
   unmuted.addEventListener("click", () => {
     unmuted.classList.add("hidden");
     muted.classList.remove("hidden");
-    beat.play();
+    range.classList.add("hidden");
+    beat.pause();
   });
 
   muted.addEventListener("click", () => {
     muted.classList.add("hidden");
     unmuted.classList.remove("hidden");
-    beat.pause();
+    range.classList.remove("hidden");
+    beat.volume = 0.2;
+    beat.play();
   });
 
   play.addEventListener("click", () => {

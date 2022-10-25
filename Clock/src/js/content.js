@@ -9,6 +9,7 @@ const decrease = document.querySelector("#decrease");
 
 const unmuted = document.querySelector("#unmuted");
 const muted = document.querySelector("#muted");
+const range = document.querySelector("#range");
 
 export {
   minutes,
@@ -20,4 +21,5 @@ export {
   decrease,
   unmuted,
   muted,
+  range,
 };

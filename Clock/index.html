@@ -43,16 +43,26 @@
         />
       </div>
     </section>
-    <img
-      src="./src/assets/volume-medium.svg"
-      class="w-14 h-14 cursor-pointer absolute top-[90%] right-[5%]"
-      id="unmuted"
-    />
-    <img
-      src="./src/assets/volume-mute.svg"
-      class="w-14 h-14 cursor-pointer absolute top-[90%] right-[5%] hidden"
-      id="muted"
-    />
+    <div class="absolute top-[88%] right-[5%]">
+      <img
+        src="./src/assets/volume-medium.svg"
+        class="w-14 h-14 cursor-pointer hidden relative left-7"
+        id="unmuted"
+      />
+      <img
+        src="./src/assets/volume-mute.svg"
+        class="w-14 h-14 cursor-pointer"
+        id="muted"
+      />
+      <input
+        type="range"
+        id="range"
+        value="20"
+        min="0"
+        max="100"
+        class="w-28 hidden cursor-pointer"
+      />
+    </div>
   </body>
   <script src="./src/index.js" type="module"></script>
 </html>
