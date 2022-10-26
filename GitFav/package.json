@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
+  },
+  "dependencies": {
+    "tailwind-scrollbar": "^2.0.1"
+  }
+}

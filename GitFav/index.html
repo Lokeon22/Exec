@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/styles/output.css" rel="stylesheet" />
+    <title>Git FAV</title>
+  </head>
+  <body class="bg-black text-white">
+    <section class="max-w-[1440px] mx-auto my-0">
+      <div class="flex justify-center items-center gap-8 mt-24 py-4 px-4">
+        <label class="mr-0 sm:mr-32">
+          <img src="./src/assets/Gitfav.svg" class="w-40" />
+        </label>
+        <div class="flex gap-1">
+          <input
+            type="text"
+            placeholder="Digite o Github username"
+            class="py-1 px-2 rounded text-black"
+            id="user"
+          />
+          <button
+            id="favoritar"
+            type="submit"
+            class="bg-[#065E7C] flex justify-center items-center gap-2 uppercase -tracking-tighter py-1 px-3 rounded-sm text-xs hover:bg-slate-700"
+          >
+            <img src="./src/assets/EstrelaFavoritar.svg" class="w-4 h-4" />
+            favoritar
+          </button>
+        </div>
+      </div>
+    </section>
+    <h2
+      class="text-3xl text-gray-400 text-center font-bold mt-5 md:mt-20"
+      id="favTitle"
+    >
+      Nenhum favorito ainda
+    </h2>
+    <section
+      class="hidden max-w-[650px] mx-auto my-0 mt-8 bg-[#043444] py-2 rounded-md"
+      id="fullContent"
+    >
+      <ul class="grid sm:grid-cols-5 grid-cols-4 sm:gap-4 gap-12 mb-3 px-2">
+        <li class="sm:col-span-2 col-span-1">Usuário</li>
+        <li>Repositories</li>
+        <li>Followers</li>
+        <li>Ação</li>
+      </ul>
+
+      <div
+        id="containUsers"
+        class="h-52 overflow-y-scroll scrollbar-thin scrollbar-thumb-[#4A808C] scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+      ></div>
+    </section>
+  </body>
+  <script src="./src/index.js" type="module"></script>
+</html>
