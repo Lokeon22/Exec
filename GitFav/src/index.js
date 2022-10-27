@@ -5,9 +5,19 @@ const user = document.querySelector("#user");
 const favTitle = document.querySelector("#favTitle");
 
 const fetchUser = async () => {
+  /* tratamento de erro undefined */
+  if (user.value == "") {
+    return alert("Campo vazio");
+  }
+
   const data = await fetch(`https://api.github.com/users/${user.value}`).then(
     (res) => res.json()
   );
+
+  /* tratamento user not found */
+  if (data.message == "Not Found") {
+    return alert("Usuario não encontrado");
+  }
 
   const createUser = () => {
     const containUsers = document.querySelector("#containUsers");
@@ -35,6 +45,10 @@ const fetchUser = async () => {
   </ul>
 
     `;
+
+    /* LocalStorage works in future update with div.innerhtml convert to {object / array} */
+    const entries =
+      JSON.parse(localStorage.getItem("@github-favorites:")) || [];
 
     containUsers.appendChild(div);
 
