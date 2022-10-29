@@ -192,6 +192,16 @@ body {
   font-weight: bold;
 }
 
+.arrowtop {
+  position: fixed;
+  display: none;
+  width: 34px;
+  height: 34px;
+  top: 95%;
+  right: 1%;
+  cursor: pointer;
+}
+
 .faq-lista dd {
   display: none;
 }
@@ -208,6 +218,12 @@ body {
 dd.ativo {
   display: block;
   animation: slow 0.4s forwards;
+}
+
+.menu-mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 @keyframes slow {
