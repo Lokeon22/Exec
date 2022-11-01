@@ -1,4 +1,4 @@
-import { initImgContent, initFaqContent } from "./js/content.js";
+import { initContent, initFaqContent } from "./js/content.js";
 
 import {
   initSlowScroll,
@@ -8,7 +8,7 @@ import {
 
 import { menuMobile } from "./js/menu.js";
 
-initImgContent();
+initContent();
 initFaqContent();
 initSlowScroll();
 initArrowScrollTop();
