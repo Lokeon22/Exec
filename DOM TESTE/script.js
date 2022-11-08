@@ -6,12 +6,13 @@ import {
   scrollDisplayToArrow,
 } from "./js/scroll.js";
 
-import { menuMobile } from "./js/menu.js";
+import { menuMobile, initMenuModal } from "./js/menu.js";
 
 initContent();
 initFaqContent();
 initSlowScroll();
 initArrowScrollTop();
+initMenuModal();
 
 window.onscroll = () => {
   scrollDisplayToArrow();

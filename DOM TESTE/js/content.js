@@ -1,6 +1,6 @@
 const initContent = () => {
-  const tabMenu = document.querySelectorAll(".js-tabmenu li");
-  const tabContent = document.querySelectorAll(".js-tabcontent section");
+  const tabMenu = document.querySelectorAll("[data-content] li");
+  const tabContent = document.querySelectorAll("[data-anime]");
   tabContent[0].classList.add("ativo");
 
   const execContent = (index) => {
@@ -18,7 +18,7 @@ const initContent = () => {
 };
 
 const initFaqContent = () => {
-  const faqContent = document.querySelectorAll(".faq-lista dt");
+  const faqContent = document.querySelectorAll("[data-faq] dt");
   faqContent[0].nextElementSibling.classList.add("ativo");
 
   faqContent.forEach((title) => {
